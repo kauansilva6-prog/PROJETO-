@@ -37,7 +37,7 @@ class Autores:
 # Classe Gênero
 # ====================================
 class Genero:
-    def __init__(self, id_genero, tipogenero, faixaetaria, generolivro): 
+    def __init__(self, id_genero, tipogenero, faixaetaria, generolivro): # Adicionado : e espaço no def
         self.id_genero = id_genero
         self.tipogenero = tipogenero
         self.faixaetaria = faixaetaria
@@ -47,7 +47,7 @@ class Genero:
 # Classe Livros
 # ====================================
 class Livro:
-    def __init__(self, id_livro, titulo, sinopse, sequencia, genero, autores, bibliotecario, cliente): 
+    def __init__(self, id_livro, titulo, sinopse, sequencia, genero, autores, bibliotecario, cliente): # Adicionado : e organização dos parâmetros
         self.id_livro = id_livro
         self.titulo = titulo
         self.sequencia = sequencia
@@ -63,7 +63,7 @@ class Livro:
         print("===== DETALHES DO LIVRO =====")
         print(f"Título: {self.titulo}")
         print(f"Sequência: {self.sequencia}")
-        print(f"Autor: {self.autores.nome}") 
+        print(f"Autor: {self.autores.nome}") # Buscando o nome direto da classe Autores
         print(f"Gênero: {self.genero.tipogenero} (Idade: {self.genero.faixaetaria})")
         print(f"Cadastrado por Bibliotecário: {self.bibliotecario.nome}")
         print(f"Reservado por Cliente: {self.cliente.nome}")
@@ -74,6 +74,12 @@ class Livro:
         print("Título: O Fantasma da Ópera")
         print("Sequência: Não contém")
         print("Sinopse: Prestes a morrer, o pai da jovem Christine Daaé...")
+
+# class cria uma classe que define um molde
+#  __init__ irá iniciar o objeto quando ele é criado e definir os que ele terá
+#  self funciona para definir o atributo. self.nome irá  definir o atributo na dentro do objeto 
+#  print funciona para imprimir os resultados que está sendo criado 
+
 
 
 
